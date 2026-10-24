@@ -1,6 +1,6 @@
 import './App.css'
-import PokemonList from './PokemonList.jsx'
-import TeamSummary from './TeamSummary.jsx'
+import Counter from './Counter.jsx'
+import ShowTeam from './ShowTeam.jsx'
 
 const pokemon = [
   { id: 25, name: "Pikachu", type: "Electric"},
@@ -14,13 +14,9 @@ function App() {
         <h1>My Pokemon Team</h1>
         <p>Welcome to my Team!</p>  
 
-        <PokemonList 
-          array={pokemon}
-        />
+        <ShowTeam array={pokemon} />
 
-        <TeamSummary 
-          array={pokemon}
-        />
+        <Counter />
 
       </div>
   );
